@@ -2,13 +2,6 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 
-//basic syntax for a gulp task
-gulp.task('task-name', function(done){
-console.log('Hello Zell');
-done();
-});
-
-
 //basic syntax for watching (real time refreshing of files)
 //gulp.watch('files-to-watch', gulp.series('tasks', 'to', 'run')); 
 
@@ -22,8 +15,6 @@ gulp.task('sass', function(done){
     done();
 });
 
-
-
 gulp.task('browserSync', function(done){
 	browserSync.init({
 		server:{
@@ -33,7 +24,6 @@ gulp.task('browserSync', function(done){
 	})
 	done();
 });
-
 
 
 //task allows addition of more watch functions for different files
@@ -51,8 +41,6 @@ gulp.task('watchJS', function(done){
 	gulp.watch('app/js/**/*.js').on('change', browserSync.reload);
 	done();
 });
-
-
 
 gulp.task('def', 
 	gulp.series(gulp.parallel('sass','browserSync'), 
