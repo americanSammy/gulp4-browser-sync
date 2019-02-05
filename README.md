@@ -18,4 +18,4 @@ This installs Gulp.
 10. Edit your styles.scss file and index.html file (link them like normal).
 11. From the command line, and in your project directory enter: gulp def and see if your index.html file opens...
 
-If not, I am sorry, my memory is fleeting, feel free to update this is you find an error.
+If not, I am sorry, my memory is fleeting, feel free to update this if you find an error.
